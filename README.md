@@ -1,12 +1,16 @@
 # Ethereum Marriage Contract
 
 ---
-author: Witek Radomski
-date: April 7, 2019
-source: https://github.com/coinfork/Marriage
+* version: 1.1
+* author: Witek Radomski
+* date: April 7, 2019
+* source: https://github.com/coinfork/Marriage
 ---
 
 ## Overview
+
+A robust marriage contract with optional time-locked funds and prisoner's dilemma divorce function.
+
 This Smart Contract is meant to be deployed on the Ethereum (1.0) Blockchain.
 
 ## Deployment
@@ -18,7 +22,7 @@ This Smart Contract is meant to be deployed on the Ethereum (1.0) Blockchain.
   * _partner1: The address of the first partner.
   * _partner2: The address of the second partner.
   * _yearsToLockFunds: How many years to lock funds for. Example: 15.
-  * _divorceBurnAddress If a divorce occurs, Ether will be sent here. I recommend supplying the public address of a charity that accepts Ether, such as SENS Research Foundation for the betterment of humankind. Their address is: 0x542EFf118023cfF2821b24156a507a513Fe93539
+  * _divorceBurnAddress If a divorce occurs, Ether will be sent here. I recommend supplying the public address of a charity that accepts Ether, such as SENS Research Foundation for the betterment of humankind. Their address is: `0x542EFf118023cfF2821b24156a507a513Fe93539`
   * _percentToBurnOnDivorce The percentage out of 100 to burn if a divorce happens. Suggested: 90. The remaining funds are sent to the divorce initiator.
 * Here is an example of these fields filled out:
   * `"Test Marriage","0xca35b7d915458ef540ade6068dfe2f44e8fa733c","0x14723a09acff6d2a60dcdf7aa4aff308fddc160c",15,"0x542EFf118023cfF2821b24156a507a513Fe93539",90`
